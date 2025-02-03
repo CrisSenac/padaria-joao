@@ -7,9 +7,13 @@
     font-size: 30px;
 }
 
-body {
+.body-home {
     background-image: url(./image/fundofigma.png);
     background-size: cover; 
+}
+
+body {
+    background-color: rgb(209, 179, 135);
 }
 
 .title-header img {                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
@@ -25,7 +29,7 @@ body {
     left: 0;
 }
 
-.menu-direito {
+.menu {
     width: 100%;
     display: flex;
     justify-content: space-evenly;    
@@ -63,14 +67,72 @@ h1 {
 
 .itens-cardapio {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 .itens {
-    width: 18%;
-    height: 18%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: stretch;
+    width: 30%; 
+    text-align: center; 
+    background: rgba(92, 38, 38, 0.589);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.itens img {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+/* RESPONSIVIDADE*/
+
+
+@media (max-width: 600px) {
+    .menu {
+        gap: 10px;
+    }
+
+    .tamanho-menu {
+        display: flex;
+    }
+
+    .itens {
+        width: 45%; /* 2 colunas no tablet */
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .itens {
+        width: 90%; /* 1 item por linha no celular */
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .botao-cartao {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .botao-cartao {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
 }
