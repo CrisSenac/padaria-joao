@@ -85,7 +85,6 @@ h1 {
     height: 70%;
     border-radius: 8px;
 }
-
        
 .container {
     max-width: 600px;
@@ -108,6 +107,7 @@ h2 {
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
+
 .total {
     text-align: right;
     font-size: 18px;
@@ -133,7 +133,6 @@ button:hover {
     background-color: darkred;
 }
 
-
 .login-container {
     max-width: 600px;
     margin: auto;
@@ -142,9 +141,11 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
     margin-bottom: 20px;
 }
+
 input {
     width: 95%;
     padding: 10px;
@@ -153,6 +154,7 @@ input {
     border-radius: 5px;
     margin-top: 10px;
 }
+
 .entrar {
     width: 100%;
     padding: 10px;
@@ -163,6 +165,7 @@ input {
     cursor: pointer;
     margin-top: 10px;
 }
+
 p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
@@ -183,14 +186,27 @@ p {
 button:hover {
     background-color: #218838;
 }
+
 .social-login {
     display: flex;
+    justify-content: space-evenly;
     margin-top: 10px;
 }
- .social-login img {
+
+.social-login img {
     border-radius: 10px;
     width: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+h6, .cadastro {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.cadastro:hover {
+    color: rgb(99, 55, 55);
 }
